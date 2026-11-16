@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✧Shane's Space✧ - My Portfolio</title>
+  <link rel="icon" type="image/png" href="miffy13.png" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Angel Wing Heart Grey - https://www.cursors-4u.com/cursor/angel-wing-heart-grey */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/angel-wing-heart-angel-wing-heart-grey-aca353a1-64.webp') 16 16, auto !important;
+}
+/* End www.Cursors-4U.com Code */
+  </style>
+
+  <script>
+  window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  });
+</script>
+</head>
+
+<!-- 1. Body Tag Padding Adjustment -->
+<body 
+    class="text-gray-800 p-3 sm:p-6 md:p-12 flex justify-center items-center min-h-screen"
+    style="
+      font-family: 'Fredoka', sans-serif;
+      background-color: #ffffff;
+      background-image: 
+        linear-gradient(90deg, rgba(191, 219, 254, 0.5) 35%, transparent 35%),
+        linear-gradient(rgba(191, 219, 254, 0.5) 35%, transparent 35%);
+      background-size: 45px 45px;
+    ">
+
+    <!-- 2. Main Website Container (Responsive Border & Padding) -->
+    <div class="w-full max-w-6xl bg-blue-50 border-4 sm:border-6 md:border-8 border-[#005498] shadow-xl rounded-xl sm:rounded-2xl overflow-hidden"
+         style="background-image: linear-gradient(to right, #cce2fe 1px, transparent 1px), linear-gradient(to bottom, #cce2fe 1px, transparent 1px); background-size: 24px 24px;">
+
+    <!-- 1. Bookmark Navigation Bar (Mobile Horizontally Scrollable & Laptop Friendly) -->
+<nav class="w-full bg-[#cce2fe] border-b-4 border-[#005498] px-4 md:px-8 pt-4 pb-0 flex items-end justify-between overflow-x-auto overflow-y-hidden scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none]">
+      
+  <!-- Left Side Bookmark Tabs (Scrollable on Mobile) -->
+  <div class="flex items-end gap-2 flex-shrink-0">
+    
+    <!-- Biodata Tab -->
+    <a href="biodata.html" 
+         class="px-6 pt-3 pb-2 bg-white rounded-t-md border-t-2 border-x-2 border-[#005498] hover:bg-[#005498] text-lg font-bold shadow-sm transition-all duration-200 ease-in-out hover:-mb-[4px] hover:pb-4 hover:border-b-white relative z-10 group"
+       onmouseover="this.querySelector('.tab-text').style.color='#ffffff'; this.querySelector('.tab-text').style.textShadow='1px 1px 0px #003366, 2px 2px 0px #001122';"
+       onmouseout="this.querySelector('.tab-text').style.color='#93c5fd'; this.querySelector('.tab-text').style.textShadow='1px 1px 0px #005498, -1px -1px 0px #005498, 1px -1px 0px #005498, -1px 1px 0px #005498, 2px 2px 0px #5a97d4';">
+      <span class="tab-text transition-colors duration-200 whitespace-nowrap" style="color: #93c5fd; text-shadow: 1px 1px 0px #005498, -1px -1px 0px #005498, 1px -1px 0px #005498, -1px 1px 0px #005498, 2px 2px 0px #5a97d4;">MY BIODATA</span>
+    </a>
+       
+
+    <!-- Portfolio Tab -->
+    <a href="portfolio.html" 
+       class="px-6 pt-3 pb-4 bg-white rounded-t-md border-t-2 border-x-2 border-[#005498] text-lg font-bold shadow-sm -mb-[4px] relative z-10 group"
+       style="border-bottom: 2px solid #ffffff;">
+      <span class="whitespace-nowrap" style="color: #005498; text-shadow: 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 2px 2px 0px #5a97d4;">MY PORTFOLIO</span>
+    </a>
+    
+    <!-- Video Tab -->
+    <a href="video.html" 
+       class="px-6 pt-3 pb-2 bg-white rounded-t-md border-t-2 border-x-2 border-[#005498] hover:bg-[#005498] text-lg font-bold shadow-sm transition-all duration-200 ease-in-out hover:-mb-[4px] hover:pb-4 hover:border-b-white relative z-10 group"
+       onmouseover="this.querySelector('.tab-text').style.color='#ffffff'; this.querySelector('.tab-text').style.textShadow='1px 1px 0px #003366, 2px 2px 0px #001122';"
+       onmouseout="this.querySelector('.tab-text').style.color='#93c5fd'; this.querySelector('.tab-text').style.textShadow='1px 1px 0px #005498, -1px -1px 0px #005498, 1px -1px 0px #005498, -1px 1px 0px #005498, 2px 2px 0px #5a97d4';">
+      <span class="tab-text transition-colors duration-200 whitespace-nowrap" style="color: #93c5fd; text-shadow: 1px 1px 0px #005498, -1px -1px 0px #005498, 1px -1px 0px #005498, -1px 1px 0px #005498, 2px 2px 0px #5a97d4;">MY VIDEO</span>
+    </a>
+
+    <!-- Comment Tab -->
+    <a href="comment.html" 
+       class="px-6 pt-3 pb-2 bg-white rounded-t-md border-t-2 border-x-2 border-[#005498] hover:bg-[#005498] text-lg font-bold shadow-sm transition-all duration-200 ease-in-out hover:-mb-[4px] hover:pb-4 hover:border-b-white relative z-10 group"
+       onmouseover="this.querySelector('.tab-text').style.color='#ffffff'; this.querySelector('.tab-text').style.textShadow='1px 1px 0px #003366, 2px 2px 0px #001122';"
+       onmouseout="this.querySelector('.tab-text').style.color='#93c5fd'; this.querySelector('.tab-text').style.textShadow='1px 1px 0px #005498, -1px -1px 0px #005498, 1px -1px 0px #005498, -1px 1px 0px #005498, 2px 2px 0px #5a97d4';">
+      <span class="tab-text transition-colors duration-200 whitespace-nowrap" style="color: #93c5fd; text-shadow: 1px 1px 0px #005498, -1px -1px 0px #005498, 1px -1px 0px #005498, -1px 1px 0px #005498, 2px 2px 0px #5a97d4;">YOUR COMMENT</span>
+    </a>
+
+  </div>
+
+  <!-- Right Side: Miffy Icons & Home Icon Tab -->
+
+      <div class="flex items-end pb-0 pl-2 gap-8">
+
+       
+
+        <!-- Miffy Character Icon (Bigger size: h-14) -->
+
+        <img src="miffy10.png" alt="Miffy Icon" class="h-14 w-auto object-contain block" onerror="this.style.display='none';" />
+
+
+
+      <!-- Right Side: Miffy Icons & Home Icon Tab -->
+
+      <div class="flex items-end pb-0 pl-2 gap-8">
+
+       
+
+        <!-- Miffy Character Icon (Bigger size: h-14) -->
+
+        <img src="miffy10.png" alt="Miffy Icon" class="h-14 w-auto object-contain block" onerror="this.style.display='none';" />
+
+
+
+      <!-- Right Side: Miffy Icons & Home Icon Tab -->
+
+      <div class="flex items-end pb-0 pl-2 gap-8">
+
+       
+
+        <!-- Miffy Character Icon (Bigger size: h-14) -->
+
+        <img src="miffy10.png" alt="Miffy Icon" class="h-14 w-auto object-contain block" onerror="this.style.display='none';" />
+
+    <!-- Home Icon Tab -->
+    <div class="flex items-center pb-2 pl-2">
+      <a href="index.html" 
+         title="Back to Homepage"
+         class="w-12 h-12 bg-[#005498] text-white rounded-full border-2 border-[#005498] flex items-center justify-center hover:bg-white hover:text-[#005498] transition-all duration-300 ease-in-out hover:scale-110 active:scale-95 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+</nav>
+
+    <!-- 2. Secondary Sub-Page Title Banner with Edge-to-Edge Dashed Framing -->
+    <div class="w-full border-b-4 border-[#005498] py-3 px-0 flex flex-col items-center justify-center relative z-0 overflow-hidden" 
+         style="background-color: #FFF3B0; background-image: radial-gradient(#FFFDE8 30%, transparent 30%), radial-gradient(#FFFDE8 30%, transparent 30%); background-size: 40px 40px; background-position: 0 0, 22px 22px;">
+      
+      <div class="w-full border-t-4 border-b-4 border-dashed border-[#005498] py-6 flex items-center justify-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-wide text-[#005498] text-center" 
+            style="font-family: 'Fredoka', sans-serif; text-shadow: 3px 3px 0px #FFF, -3px -3px 0px #FFF, 3px -3px 0px #FFF, -3px 3px 0px #FFF, 6px 6px 0px #5a97d4;">
+          MY PORTFOLIO
+        </h1>
+      </div>
+    </div>
+
+    <!-- 3. Page Content Area with Yellow Stripes Background -->
+<div class="p-4 md:p-6 flex-1">
+  <div class="border-2 border-[#005498] pt-0 pb-12 px-6 md:px-8 rounded-md min-h-[700px] flex flex-col items-center justify-start shadow-sm relative overflow-hidden"
+        style="background-image: repeating-linear-gradient(90deg, #FFF3B0, #FFF3B0 12px, #FFFDE8 12px, #FFFDE8 24px);">
+    
+    <!-- VIEW 1: FOLDER SELECTION MENU -->
+    <div id="folder-menu-view" class="w-full flex flex-col items-center z-10">
+      
+      <!-- Header Prompt Tag (Remains attached at the top) -->
+      <div class="border-2 border-[#005498] border-t-0 bg-white px-8 py-2 rounded-b-md shadow-[5px_5px_0px_#5a97d4]">
+        <span class="text-lg md:text-xl font-bold text-[#005498]" style="font-family: 'Courier Prime', monospace;">WHAT DO YOU WANT TO SEE?</span>
+      </div>
+
+      <!-- 4 Folder Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-y-32 gap-x-40 w-full max-w-4xl px-6 mt-24">
+        
+        <!-- Folder 1: Digital Drawing -->
+        <div class="relative group w-full">
+          <!-- Miffy Peeking Image (Fades out when folder is hovered) -->
+          <img src="miffy11.png" alt="Miffy Icon" class="w-14 h-auto absolute -left-10 top-1/2 -translate-y-1/2 z-0 pointer-events-none opacity-100 group-hover:opacity-0 transition-opacity duration-200" />
+          
+          <!-- Folder Button -->
+          <button onclick="openFolder('digital-drawing')" class="w-full relative z-10 bg-[#cce2fe] border-3 border-[#005498] rounded-r-2xl rounded-b-2xl rounded-tl-sm px-6 py-8 text-left shadow-[5px_5px_0px_#005498] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex flex-col justify-center min-h-[160px]">
+            <div class="absolute -top-5 left-0 w-24 h-6 bg-[#cce2fe] border-t-3 border-x-3 border-[#005498] rounded-t-lg"></div>
+            <span class="text-lg md:text-xl font-bold text-[#005498] leading-snug z-10 flex flex-col" style="font-family: 'Courier Prime', monospace;">
+              DIGITAL DRAWING
+            <span class="text-xs md:text-[18px] font-normal text-[#005498]/80 mt-1">App: Procreate</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- Folder 2: Storyboard -->
+        <div class="relative group w-full">
+          <!-- Miffy Peeking Image (Fades out when folder is hovered) -->
+          <img src="miffy11.png" alt="Miffy Icon" class="w-14 h-auto absolute -left-10 top-1/2 -translate-y-1/2 z-0 pointer-events-none opacity-100 group-hover:opacity-0 transition-opacity duration-200" />
+          
+          <!-- Folder Button (Opens Storyboard Book Selection Sub-Menu) -->
+          <button onclick="openFolder('storyboard')" class="w-full relative z-10 bg-[#cce2fe] border-3 border-[#005498] rounded-r-2xl rounded-b-2xl rounded-tl-sm px-6 py-8 text-left shadow-[5px_5px_0px_#005498] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex flex-col justify-center min-h-[160px]">
+            <div class="absolute -top-5 left-0 w-24 h-6 bg-[#cce2fe] border-t-3 border-x-3 border-[#005498] rounded-t-lg"></div>
+            <span class="text-lg md:text-xl font-bold text-[#005498] leading-snug z-10" style="font-family: 'Courier Prime', monospace;">STORYBOARDING</span>
+          </button>
+        </div>
+
+        <!-- Folder 3: 3D Modelling -->
+        <div class="relative group w-full">
+          <!-- Miffy Peeking Image (Fades out when folder is hovered) -->
+          <img src="miffy11.png" alt="Miffy Icon" class="w-14 h-auto absolute -left-10 top-1/2 -translate-y-1/2 z-0 pointer-events-none opacity-100 group-hover:opacity-0 transition-opacity duration-200" />
+          
+          <!-- Folder Button -->
+          <button onclick="openFolder('3d-modelling')" class="w-full relative z-10 bg-[#cce2fe] border-3 border-[#005498] rounded-r-2xl rounded-b-2xl rounded-tl-sm px-6 py-8 text-left shadow-[5px_5px_0px_#005498] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex flex-col justify-center min-h-[160px]">
+            <div class="absolute -top-5 left-0 w-24 h-6 bg-[#cce2fe] border-t-3 border-x-3 border-[#005498] rounded-t-lg"></div>
+            <span class="text-lg md:text-xl font-bold text-[#005498] leading-snug z-10" style="font-family: 'Courier Prime', monospace;">BLENDER</span>
+          </button>
+        </div>
+
+        <!-- Folder 4: Basic Programming -->
+        <div class="relative group w-full">
+          <!-- Miffy Peeking Image (Fades out when folder is hovered) -->
+          <img src="miffy11.png" alt="Miffy Icon" class="w-14 h-auto absolute -left-10 top-1/2 -translate-y-1/2 z-0 pointer-events-none opacity-100 group-hover:opacity-0 transition-opacity duration-200" />
+          
+          <!-- Folder Button -->
+          <button onclick="openFolder('programming')" class="w-full relative z-10 bg-[#cce2fe] border-3 border-[#005498] rounded-r-2xl rounded-b-2xl rounded-tl-sm px-6 py-8 text-left shadow-[5px_5px_0px_#005498] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex flex-col justify-center min-h-[160px]">
+            <div class="absolute -top-5 left-0 w-24 h-6 bg-[#cce2fe] border-t-3 border-x-3 border-[#005498] rounded-t-lg"></div>
+            <span class="text-lg md:text-xl font-bold text-[#005498] leading-snug z-10" style="font-family: 'Courier Prime', monospace;">WEB<br>DEVELOPMENT</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- VIEW 1.5: STORYBOARD SUB-MENU (3 Books Selection View) -->
+<div id="storyboard-menu-view" class="w-full max-w-5xl hidden flex-col items-center pt-16 pb-8 z-10 px-6 my-auto">
+  
+  <!-- Outer Light Blue Container Card -->
+  <div class="w-full bg-[#cce2fe] border-2 border-[#005498] rounded-2xl p-8 md:p-10 relative shadow-[5px_5px_0px_#5a97d4] flex flex-col items-center">
+    
+    <!-- Header Tag -->
+    <div class="border-2 border-[#005498] bg-white px-8 py-2 rounded-md shadow-[5px_5px_0px_#5a97d4] mb-12 flex items-center gap-3">
+      <span class="text-lg md:text-xl font-bold text-[#005498]" style="font-family: 'Courier Prime', monospace;">Select Storyboard Project</span>
+    </div>
+
+    <!-- 3 Dark Blue Books Grid -->
+    <div class="relative w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center min-h-[300px]">
+      
+      <!-- Book 1 (Left) -->
+      <button onclick="openGallery('storyboard-1')" class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-2 focus:outline-none">
+        <div class="w-44 h-60 bg-[#005498] border-3 border-[#005498] rounded-r-xl rounded-l-sm shadow-[6px_6px_0px_rgba(0,84,152,0.3)] group-hover:shadow-[8px_8px_0px_#5a97d4] flex flex-col items-center justify-between p-5 relative overflow-hidden transition-all">
+          <div class="absolute left-0 top-0 bottom-0 w-3.5 bg-[#003d70] border-r border-white/20"></div>
+          <span class="text-white font-bold text-lg text-center mt-2 z-10" style="font-family: 'Courier Prime', monospace;">Storyboard<br>#1</span>
+          <img src="miffy7.png" alt="Miffy Icon" class="w-24 h-28 object-contain z-10" />
+        </div>
+      </button>
+
+      <!-- Book 2 (Middle, staggered lower) -->
+      <button onclick="openGallery('storyboard-2')" class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-2 focus:outline-none md:translate-y-10">
+        <div class="w-44 h-60 bg-[#005498] border-3 border-[#005498] rounded-r-xl rounded-l-sm shadow-[6px_6px_0px_rgba(0,84,152,0.3)] group-hover:shadow-[8px_8px_0px_#5a97d4] flex flex-col items-center justify-between p-5 relative overflow-hidden transition-all">
+          <div class="absolute left-0 top-0 bottom-0 w-3.5 bg-[#003d70] border-r border-white/20"></div>
+          <span class="text-white font-bold text-lg text-center mt-2 z-10" style="font-family: 'Courier Prime', monospace;">Storyboard<br>#2</span>
+          <img src="miffy7.png" alt="Miffy Icon" class="w-24 h-28 object-contain z-10" />
+        </div>
+      </button>
+
+      <!-- Book 3 (Right) -->
+      <button onclick="openGallery('storyboard-3')" class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-2 focus:outline-none">
+        <div class="w-44 h-60 bg-[#005498] border-3 border-[#005498] rounded-r-xl rounded-l-sm shadow-[6px_6px_0px_rgba(0,84,152,0.3)] group-hover:shadow-[8px_8px_0px_#5a97d4] flex flex-col items-center justify-between p-5 relative overflow-hidden transition-all">
+          <div class="absolute left-0 top-0 bottom-0 w-3.5 bg-[#003d70] border-r border-white/20"></div>
+          <span class="text-white font-bold text-lg text-center mt-2 z-10" style="font-family: 'Courier Prime', monospace;">Storyboard<br>#3</span>
+          <img src="miffy7.png" alt="Miffy Icon" class="w-24 h-28 object-contain z-10" />
+        </div>
+      </button>
+
+    </div>
+
+    <!-- Bottom Left Back Button -->
+    <div class="w-full flex justify-start mt-16 px-2">
+      <button onclick="backToFolders()" class="bg-white text-[#005498] font-bold px-5 py-2 rounded-lg border-2 border-[#005498] hover:bg-gray-100 flex items-center gap-2 text-sm md:text-base shadow-sm transition-transform active:scale-95" style="font-family: 'Courier Prime', monospace;">
+        <span>← Back</span>
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- VIEW 2: PORTFOLIO ITEM GALLERY VIEWER (Hidden by default) -->
+    <div id="gallery-viewer-view" class="w-full max-w-5xl hidden flex-col items-center pt-2 md:pt-12 z-10 px-2 md:px-6">
+      
+      <!-- Deep Blue Outer Card (Full width on mobile, max-width on desktop) -->
+      <div class="w-full bg-[#005498] border-3 border-[#005498] rounded-2xl p-4 md:p-8 text-white relative shadow-[5px_5px_0px_#5a97d4]">
+        
+        <!-- Dashed Inner Blueprint Frame -->
+        <div class="border-2 border-dashed border-white/80 rounded-xl p-4 md:p-5 flex flex-col gap-4 relative">
+          
+          <!-- Category Tag Header -->
+          <h2 id="gallery-title" class="text-xl md:text-2xl font-bold tracking-wide text-center" style="font-family: 'Courier Prime', monospace;">
+            Digital Drawing!!
+          </h2>
+
+          <!-- Main Artwork / Image Display (Larger vertical space on mobile) -->
+          <div class="w-full bg-white rounded-lg overflow-hidden aspect-[3/4] md:aspect-[16/9] flex items-center justify-center border-2 border-[#005498]">
+            <img id="gallery-image" src="" alt="Portfolio Work" class="w-full h-full object-contain">
+          </div>
+
+          <!-- Footer Info Row inside Frame -->
+          <div class="flex items-center justify-between text-sm md:text-base pt-2 px-1" style="font-family: 'Courier Prime', monospace;">
+            <span id="gallery-description">Character concept art</span>
+            <span id="gallery-counter" class="font-bold">1/2</span>
+          </div>
+
+        </div>
+
+        <!-- Bottom Navigation Controls Row (Spaced cleanly on mobile) -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 px-1">
+          
+          <!-- Back Button -->
+          <button onclick="closeGallery()" class="w-full sm:w-auto bg-white text-[#005498] font-bold px-6 py-2.5 rounded-lg border border-[#005498] hover:bg-gray-100 flex items-center justify-center gap-2 text-base shadow-sm transition-transform active:scale-95" style="font-family: 'Courier Prime', monospace;">
+            <span>← Back</span>
+          </button>
+
+          <!-- Dynamic Action Area (Optional Visit Link or Miffy Controls) -->
+          <div id="gallery-action-container" class="flex items-center justify-center gap-2 w-full sm:w-auto">
+            <!-- Rendered dynamically via updateGalleryDisplay if link exists -->
+          </div>
+
+          <!-- Miffy Arrow Navigation Controls (Clean layout with touch-friendly spacing) -->
+          <div class="flex items-center justify-center gap-4 w-full sm:w-auto">
+            <button onclick="changePhoto(-1)" class="bg-white/10 hover:bg-white/20 text-white rounded-xl px-4 py-2 transition-transform text-xl font-bold active:scale-95">
+              ◄
+            </button>
+            <img src="miffy6.PNG" alt="Miffy Icon" class="h-16 md:h-20 w-auto object-contain" onerror="this.style.display='none';" />
+            <button onclick="changePhoto(1)" class="bg-white/10 hover:bg-white/20 text-white rounded-xl px-4 py-2 transition-transform text-xl font-bold active:scale-95">
+              ►
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- JavaScript to Handle Switching Views & Photo Carousel -->
+<script>
+  const portfolioData = {
+    'digital-drawing': [
+      { title: 'Cute Illustration', image: 'dd1.png', desc: 'A character illustration featuring whimsical elements and a fun visual composition.' },
+      { title: 'Cute Illustration', image: 'dd2.png', desc: 'A simple and charming character illustration created as a personalised social media profile picture.' },
+      { title: 'Character Design', image: 'dd3.png', desc: 'A character concept developed for an animated music video project titled The Tale of the Tiny White Snake.' },
+      { title: 'Character Design', image: 'dd4.png', desc: 'A character concept developed for an animated music video project titled The Tale of the Tiny White Snake.' },
+      { title: 'Character Design', image: 'dd5.png', desc: 'An original character design featuring my personal character, Mio.' },
+      { title: 'Character Design', image: 'dd6.png', desc: 'An early character concept exploring different visual ideas, appearances and design possibilities.' },
+      { title: 'Character Design', image: 'dd7.png', desc: "A character concept developed for a children's storybook titled Kudingking and Kinomulok." },
+      { title: 'Character Design', image: 'dd8.png', desc: "A character concept developed for a children's storybook titled Kudingking and Kinomulok." },
+      { title: 'Digital Sketch', image: 'dd9.png', desc: 'An expressive digital sketch exploring emotional expression.' },
+      { title: 'Fully Rendered Illustration', image: 'dd10.png', desc: 'A collaborative digital illustration created alongside fellow artists, showcasing detailed colouring, shading and rendering.' },
+      { title: 'Cel-Shaded Illustration', image: 'dd11.png', desc: 'An experimental digital illustration exploring anime-inspired aesthetics, clean linework and cel-shading techniques.' }
+    ],
+    'storyboard-1': [
+      { title: 'Video Production Storyboard', image: 'sb1.png', desc: 'A storyboard developed for a video production project, illustrating key scenes, shot compositions and visual sequences.' }
+    ],
+    'storyboard-2': [
+      { title: 'The Tale of the Tiny White Snake', image: 'sb2.png', desc: 'Selected storyboard scenes created for an animated music video project, focusing on visual storytelling, scene composition, character placement and camera angles.' },
+      { title: 'The Tale of the Tiny White Snake', image: 'sb3.png', desc: 'Selected storyboard scenes created for an animated music video project, focusing on visual storytelling, scene composition, character placement and camera angles.' },
+      { title: 'The Tale of the Tiny White Snake', image: 'sb4.png', desc: 'Selected storyboard scenes created for an animated music video project, focusing on visual storytelling, scene composition, character placement and camera angles.' },
+      { title: 'The Tale of the Tiny White Snake', image: 'sb5.png', desc: 'Selected storyboard scenes created for an animated music video project, focusing on visual storytelling, scene composition, character placement and camera angles.' },
+      { title: 'The Tale of the Tiny White Snake', image: 'sb6.png', desc: 'Selected storyboard scenes created for an animated music video project, focusing on visual storytelling, scene composition, character placement and camera angles.' }
+    ],
+    'storyboard-3': [
+      { title: 'My Beloved', image: 'sb7.PNG', desc: 'A short storyboard exercise to explore spontaneous idea development, visual storytelling and scene composition.' }
+    ],
+    '3d-modelling': [
+      { title: 'Isometric Bedroom', image: '3db1.png', desc: 'An isometric 3D bedroom environment designed with a focus on interior arrangement, decorative elements and spatial composition.' },
+      { title: 'Humanoid Character Modelling', image: '3db2.png', desc: 'A 3D character model of a young girl attending a witch school, focusing on character development, visual design and 3D modelling.' },
+      { title: 'Tank Texturing', image: '3db3.png', desc: 'A low-poly tank model created to explore texturing techniques, demonstrating how surface details and materials can enhance a simple 3D model.' },
+      { title: 'Wooden Artifact Texturing', image: '3db4.png', desc: 'A 3D texturing project exploring wood materials and surface details to create the appearance of a wooden-crafted object.' },
+      { title: 'Room Lighting', image: '3db5.png', desc: 'A 3D interior environment focused on lighting techniques, using warm tones and carefully adjusted illumination to create a cozy atmosphere.' },
+      { title: 'Snippet of 3D Animation', image: '3db6.png', desc: 'A 3D animation project featuring two cat characters, showcasing scene composition.' }
+    ],
+    'programming': [
+      { title: 'Pomodoro Timer', image: 'Shane Pomodoro Timer.png', desc: 'An experimental Pomodoro timer featuring custom session cycles, start/pause logic and audio notifications.', link: 'https://shanecattimer.netlify.app' }
+    ]
+  };
+
+  let currentCategory = '';
+  let currentIndex = 0;
+  let currentParentView = 'folder-menu';
+
+  function openFolder(category) {
+    if (category === 'storyboard') {
+      // Hide Folder Menu, Show Storyboard Sub-Menu
+      document.getElementById('folder-menu-view').classList.add('hidden');
+      
+      const sbView = document.getElementById('storyboard-menu-view');
+      sbView.classList.remove('hidden');
+      sbView.classList.add('flex');
+    } else {
+      currentParentView = 'folder-menu';
+      openGallery(category);
+    }
+  }
+
+  function openGallery(category) {
+    // Determine where we came from to handle the Back button correctly
+    if (category.startsWith('storyboard-')) {
+      currentParentView = 'storyboard-menu';
+      const sbView = document.getElementById('storyboard-menu-view');
+      sbView.classList.add('hidden');
+      sbView.classList.remove('flex');
+    } else {
+      currentParentView = 'folder-menu';
+      document.getElementById('folder-menu-view').classList.add('hidden');
+    }
+
+    currentCategory = category;
+    currentIndex = 0;
+    updateGalleryDisplay();
+
+    const viewer = document.getElementById('gallery-viewer-view');
+    viewer.classList.remove('hidden');
+    viewer.classList.add('flex');
+  }
+
+  function closeGallery() {
+    const viewer = document.getElementById('gallery-viewer-view');
+    viewer.classList.add('hidden');
+    viewer.classList.remove('flex');
+
+    // Return to Storyboard books if came from there, otherwise to Folder menu
+    if (currentParentView === 'storyboard-menu') {
+      const sbView = document.getElementById('storyboard-menu-view');
+      sbView.classList.remove('hidden');
+      sbView.classList.add('flex');
+    } else {
+      document.getElementById('folder-menu-view').classList.remove('hidden');
+    }
+  }
+
+  function backToFolders() {
+    const sbView = document.getElementById('storyboard-menu-view');
+    sbView.classList.add('hidden');
+    sbView.classList.remove('flex');
+    
+    document.getElementById('folder-menu-view').classList.remove('hidden');
+  }
+
+  function changePhoto(direction) {
+    const list = portfolioData[currentCategory];
+    if (!list || list.length === 0) return;
+
+    currentIndex = (currentIndex + direction + list.length) % list.length;
+    updateGalleryDisplay();
+  }
+
+  function updateGalleryDisplay() {
+    const list = portfolioData[currentCategory] || [];
+    const currentItem = list[currentIndex] || { title: 'No Title', image: '', desc: 'No item found' };
+
+    document.getElementById('gallery-title').innerText = currentItem.title;
+    document.getElementById('gallery-image').src = currentItem.image;
+    document.getElementById('gallery-description').innerText = currentItem.desc;
+    document.getElementById('gallery-counter').innerText = `${list.length > 0 ? currentIndex + 1 : 0}/${list.length}`;
+
+    // Handle Visit Link Button dynamically
+    const actionContainer = document.getElementById('gallery-action-container');
+    if (currentItem.link) {
+      actionContainer.innerHTML = `
+        <a href="${currentItem.link}" target="_blank" rel="noopener noreferrer" 
+           class="bg-white text-[#005498] font-bold px-4 py-2 rounded-lg border border-[#005498] hover:bg-gray-100 flex items-center gap-1 text-sm md:text-base shadow-sm transition-transform active:scale-95" style="font-family: 'Courier Prime', monospace;">
+          <span>Visit Site ↗</span>
+        </a>
+      `;
+    } else {
+      actionContainer.innerHTML = '';
+    }
+  }
+</script>
+
+</script>
+</body>
+</html>
